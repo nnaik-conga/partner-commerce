@@ -112,10 +112,7 @@ export class RequestQuoteFormComponent implements OnInit {
       this.onQuoteUpdate.emit(this.quote);
     });
   }
-/**
-  * Event handler for when the primary contact input changes.
-  * @param event The event that was fired.
-  */
+
 primaryContactChange() {
   if (this.contactId) {
     this.contactService.fetch(this.contactId)
